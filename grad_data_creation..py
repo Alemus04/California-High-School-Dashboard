@@ -12,7 +12,7 @@ urls = ["https://www3.cde.ca.gov/demo-downloads/acgr/acgr24.txt",
         "https://www3.cde.ca.gov/demo-downloads/acgr/acgr18.txt", 
         "https://www3.cde.ca.gov/demo-downloads/acgr/acgr17.txt"]
 #response = requests.get(url)
-db_path = r"C:\Users\Arthur Lemus\Desktop\database\grad_data.db"
+db_path = r"C:directory.db"
 conn = sqlite3.connect(db_path)
 
 dataframes = []
@@ -47,7 +47,7 @@ combined_df = combined_df.drop(columns=['Golden State Seal Merit Diploma (Count)
        'Still Enrolled (Rate)',
        'Golden State Seal Merit Diploma (Rate', 'CHSPE Completer (Rate)',
        'GED Completer (Rate)', 'Seal of Biliteracy (Count)'])
-conn = sqlite3.connect(r"C:\Users\Arthur Lemus\Desktop\database\grad_data.db")
+conn = sqlite3.connect(r"directory.db")
 combined_df.to_sql("graduation_stats_eight", conn, if_exists="replace", index=False)
 print(combined_df.columns)
 conn.close()

@@ -4,7 +4,7 @@ import os
 
 
 
-db_path = r"C:\Users\Arthur Lemus\Desktop\database\grad_data.db"
+db_path = r"directory.db"
 
 conn = sqlite3.connect(db_path)
 
@@ -16,7 +16,7 @@ for table in tables:
     df = pd.read_sql_query(f"SELECT * FROM {table}", conn)
     df.to_csv(f"{table}.csv", index = False)
     print(f"Exported {table} to {table}.csv")
-    output_folder = r"C:\Users\Arthur Lemus\Desktop\database\exports"
+    output_folder = r"directory"
 
 os.makedirs(output_folder, exist_ok=True)  # Create folder if it doesn't exist
 

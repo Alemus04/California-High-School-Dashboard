@@ -1,11 +1,9 @@
 import sqlite3
 import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
 import numpy as np
 
 
-db_path = r"C:\Users\Arthur Lemus\Desktop\database\grad_data.db"
+db_path = r"directory.db"
 
 conn = sqlite3.connect(db_path)
 #query = "SELECT * FROM graduation_stats_eight WHERE AcademicYear IS NOT NULL AND AggregateLevel = 'S' AND ReportingCategory = 'TA' AND CharterSchool IN ('Y', 'N') AND DASS IN ('Y', 'N') GROUP BY SchoolID, SchoolName, Year"
