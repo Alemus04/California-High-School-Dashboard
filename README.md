@@ -9,3 +9,5 @@ Hope this proves helpful,
 
 
 Pipeline: CA Dept. of Ed → Python → Pandas + SQL → CSV/Google Sheets
+
+Link to Dashboard: https://lookerstudio.google.com/reporting/cfbae000-52d0-4a44-9e92-8c6560e5b128 
