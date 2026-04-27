@@ -1,7 +1,7 @@
 import requests 
 import pandas as pd
 from io import StringIO 
-import sqlite3
+#import sqlite3
 # Code is pulling from URL, converting to CSV and uploading it to SQLite database
 urls = ["https://www3.cde.ca.gov/demo-downloads/acgr/acgr24.txt", 
         "https://www3.cde.ca.gov/demo-downloads/acgr/acgr23-v2.txt", 
@@ -11,9 +11,9 @@ urls = ["https://www3.cde.ca.gov/demo-downloads/acgr/acgr24.txt",
         "https://www3.cde.ca.gov/demo-downloads/acgr/acgr19.txt", 
         "https://www3.cde.ca.gov/demo-downloads/acgr/acgr18.txt", 
         "https://www3.cde.ca.gov/demo-downloads/acgr/acgr17.txt"]
-#response = requests.get(url)
-db_path = r"C:directory.db"
-conn = sqlite3.connect(db_path)
+
+#db_path = r"C:directory.db"
+#conn = sqlite3.connect(db_path)
 
 dataframes = []
 
@@ -47,7 +47,7 @@ combined_df = combined_df.drop(columns=['Golden State Seal Merit Diploma (Count)
        'Still Enrolled (Rate)',
        'Golden State Seal Merit Diploma (Rate', 'CHSPE Completer (Rate)',
        'GED Completer (Rate)', 'Seal of Biliteracy (Count)'])
-conn = sqlite3.connect(r"directory.db")
-combined_df.to_sql("graduation_stats_eight", conn, if_exists="replace", index=False)
+#conn = sqlite3.connect(r"directory.db")
+#combined_df.to_sql("graduation_stats_eight", conn, if_exists="replace", index=False)
 print(combined_df.columns)
-conn.close()
+#conn.close()

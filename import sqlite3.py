@@ -1,9 +1,9 @@
-import sqlite3
+#import sqlite3
 import pandas as pd
-import os 
+#import os 
 
 
-
+"""
 db_path = r"directory.db"
 
 conn = sqlite3.connect(db_path)
@@ -24,3 +24,4 @@ df.to_csv(os.path.join(output_folder, f"{table}.csv"), index=False)
 
 
 conn.close()
+"""

@@ -24,7 +24,7 @@ Main_df['Regular HS Diploma Graduates (Count)'] = (
     .str.extract('(\d+)')  # Extract first numeric sequence
     .astype(float)  # Convert to float for imputation
 )
-
+ 
 # Impute missing values with school-year mean, then round and cast
 Main_df['Regular HS Diploma Graduates (Count)'] = (
     Main_df['Regular HS Diploma Graduates (Count)']
