@@ -12,4 +12,17 @@ Hope this proves helpful,
 
 Pipeline: CA Dept. of Ed → Python → Pandas + SQL + Pytorch → CSV/Google Sheets
 
+
+
+<img width="1205" height="893" alt="Screenshot 2026-04-27 170210" src="https://github.com/user-attachments/assets/0091baed-3d80-42e8-9ce1-82977686792a" />
+
+
+
+
+
+<img width="1202" height="899" alt="Screenshot 2026-04-27 165849" src="https://github.com/user-attachments/assets/d4fef18d-7bc3-48f4-aa82-7b20fc285108" />
+
+
+
+
 Link to Dashboard: https://lookerstudio.google.com/reporting/cfbae000-52d0-4a44-9e92-8c6560e5b128 
